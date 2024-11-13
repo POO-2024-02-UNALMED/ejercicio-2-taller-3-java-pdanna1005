@@ -1,14 +1,14 @@
 package compras;
 
-import gestionHumana.*;
+import **;
 import java.util.ArrayList;
 
-public class OrdenCompra {
+public class ** {
 
-    public int codigo;
-    private String tipo;
-    private Empleado comprador;
-    private ArrayList<Producto> productos;
+    ** int codigo;
+    ** String tipo;
+    ** Empleado comprador;
+    ** ArrayList<Producto> productos;
 
     public OrdenCompra(int codigo, String tipo, Empleado comprador,
             ArrayList<Producto> productos) {
@@ -19,23 +19,23 @@ public class OrdenCompra {
         Producto.totalProductosPedidos += productos.size();
     }
 
-    public void agregarProducto(Producto producto) {
+    ** void agregarProducto(Producto producto) {
         if (producto.tipo.equals(tipo)) {
             productos.add(producto);
             Producto.totalProductosPedidos++;
         }
     }
 
-    public void retirarProducto(Empleado empleado, Producto producto) {
+    ** void retirarProducto(Empleado empleado, Producto producto) {
         if (!empleado.tengoPermiso()) {
-            return;
+            **;
         }
         retirarProducto(producto);
     }
 
 
     private void retirarProducto(Producto producto) {
-        for (int i = 0; i < productos.size(); i++) {
+        for (int i = 0; i < **; i++) {
             if (producto.getCodigo() == productos.get(i).getCodigo()) {
                 productos.remove(i);
                 producto.totalProductosPedidos--;
@@ -46,7 +46,7 @@ public class OrdenCompra {
         }
     }
         
-    public void descontar() {
+    public ** descontar() {
         Producto.totalProductosPedidos -= productos.size();
     }
 

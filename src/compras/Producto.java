@@ -2,30 +2,30 @@ package compras;
 
 public class Producto {
     
-    private final int codigo;
-    private String nombre;
-    public String tipo;
-    public static int totalProductosPedidos;
+    ** final int codigo;
+    ** String nombre;
+    ** String tipo;
+    ** static int totalProductosPedidos;
 
-    public Producto(int codigo, String nombre, String tipo) {
+    ** Producto(int codigo, String nombre, String tipo) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.tipo = tipo;
     }
 
-    public void imprimirNombre() {
+    ** void imprimirNombre() {
         System.out.print(nombre);
     }
 
     public void setCodigo(int codigo) {
-        codigo = codigo;
+        **;
     }
 
-    public int getCodigo() {
+    public ** getCodigo() {
         return codigo;
     }
 
-    public static int getTotalProductosPedidos() {
+    ** static int getTotalProductosPedidos() {
         return totalProductosPedidos;
     }
 }
